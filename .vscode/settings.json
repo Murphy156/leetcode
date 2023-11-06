@@ -3,6 +3,7 @@
         "stdio.h": "c",
         "stdlib.h": "c",
         "stdbool.h": "c",
-        "Hash_FourNumbersAddII.C": "cpp"
+        "Hash_FourNumbersAddII.C": "cpp",
+        "stdint.h": "c"
     }
 }
