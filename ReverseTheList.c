@@ -30,6 +30,7 @@ struct ListNode* ReverseList(struct ListNode* head)
     ListNode* pre = NULL;
     while (cur) // 这里只要是指针不为空，就可进入while
     {
+        /** 调转每一个链表的方向 */
         temp = cur->next;
         cur->next = pre;
         pre = cur;
@@ -37,6 +38,27 @@ struct ListNode* ReverseList(struct ListNode* head)
     }
     return pre;
 }
+
+/**
+ * 2024/03/29
+ * 
+*/
+struct ListNode* ReverseList2(struct ListNode* head)
+{
+    ListNode* temp;
+    ListNode* cur = head;
+    ListNode* pre = NULL;
+
+    while (cur)
+    {
+        temp = cur->next;
+        cur->next = pre;
+        pre = cur;
+        cur = temp;
+    }
+    return pre;
+}
+
 
 
 int main() {
